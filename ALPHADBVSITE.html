@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Pha DBV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            background-color: #3b6e47;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2e8b57;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        .specialties, .articles {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .specialty, .article {
+            flex: 1 1 30%;
+            background-color: #e7e7e7;
+            padding: 15px;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+        .specialty:hover, .article:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .specialties, .articles {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Desbravadores - Instruções e Dicas
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#especialidades">Especialidades</a>
+        <a href="#artigos">Artigos</a>
+        <a href="#galeria">Galeria de Fotos</a>
+        <a href="#contato">Contato</a>
+        <a href="#alphaquestões">AlphaQUESTs</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre</h2>
+        <p>Os Desbravadores são um movimento dedicado a jovens que amam a natureza e a aventura. Este site tem como objetivo compartilhar instruções, dicas e informações úteis para ajudar os membros a explorarem e se desenvolverem nas mais diversas atividades.</p>
+    </section>
+
+    <section id="especialidades">
+        <h2>Especialidades</h2>
+        <div class="specialties">
+            <div class="specialty">
+                <h3>Acampamento</h3>
+                <p>Dicas sobre como montar um acampamento seguro e confortável, desde a escolha do local até a montagem da barraca.</p>
+            </div>
+            <div class="specialty">
+                <h3>Primeiros Socorros</h3>
+                <p>Instruções básicas de primeiros socorros que todos os Desbravadores devem conhecer para lidar com emergências.</p>
+            </div>
+            <div class="specialty">
+                <h3>Navegação</h3>
+                <p>Como usar uma bússola e mapas para se orientar na natureza e nunca se perder durante uma caminhada.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="artigos">
+        <h2>Artigos</h2>
+        <div class="articles">
+            <div class="article">
+                <h3>Como escolher o equipamento ideal</h3>
+                <p>Um guia completo para escolher os melhores equipamentos para suas aventuras, desde mochilas até botas.</p>
+            </div>
+            <div class="article">
+                <h3>A importância do trabalho em equipe</h3>
+                <p>Descubra como o trabalho em equipe pode melhorar suas habilidades e tornar as atividades mais seguras e divertidas.</p>
+            </div>
+            <div class="article">
+                <h3>Conservação ambiental</h3>
+                <p>Aprenda a importância de preservar a natureza durante suas atividades e como praticar o mínimo impacto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria de Fotos</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200" alt="Foto de acampamento">
+            <img src="https://via.placeholder.com/300x200" alt="Desbravadores em ação">
+            <img src="https://via.placeholder.com/300x200" alt="Paisagem natural">
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Para mais informações ou para se juntar aos Desbravadores, entre em contato pelo e-mail: <a href="mailto:">u.alpha.america@gmail.com </a>.</p>
+    </section>
+
+    <footer>
+        © 2024 Al-Pha DBV - Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
